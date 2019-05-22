@@ -102,8 +102,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#container {
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-color: linen;
+}
+
 #header {
-    margin: 10px;
+    padding: 10px;
+}
+
+#header a {
+    text-decoration: none;
+    color: black;
 }
 
 #nav {
@@ -118,8 +141,8 @@ textarea {
 
 #nav a {
     text-decoration: none;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 20px;
+    color: blue;
 }
 
 #nav a:link, a:visited {
@@ -135,25 +158,37 @@ textarea {
 }
 
 #footer {
-    margin: 10px;
-    position: fixed;
+    padding: 10px;
+    /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     width: 100%;
     text-align: center;
 }
 
-#container {
-    font-family: "Lucida Console", Monaco, monospace;
-    text-align: center;
-    width: 600px;
-    margin: 0 auto;
+#left {
+    flex: 70%;
+    float: left;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
 }
 
+#right {
+    flex: 30%;
+    float: right;
+    margin: 0;
+    margin-top: 30px;
+    border-left: 1px solid black;
+}
 
+#right p {
+    padding-left: 10px;
+}
 
-
-
+.row {
+    display: flex;
+}
 
 
 
