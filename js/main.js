@@ -1,5 +1,5 @@
 document.getElementById("header").innerHTML = 
-    '<a href="index.html"><h1>My Web Site</h1></a>' +
+    '<a href="index.html"><h1>Austen Stewart</h1></a>' +
     '<div id="nav">' +
         '<a href="projects.html">Projects</a>' +
         '<a href="#">About</a>' +
